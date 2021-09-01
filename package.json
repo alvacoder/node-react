@@ -1,0 +1,19 @@
+{
+  "name": "node-react",
+  "version": "1.0.0",
+  "description": "Setup node react project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvacoder/node-react.git"
+  },
+  "author": "Idris Adeniji (Alvacoder)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvacoder/node-react/issues"
+  },
+  "homepage": "https://github.com/alvacoder/node-react#readme"
+}
