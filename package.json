@@ -1,24 +1,8 @@
 {
-  "name": "node-react",
+  "name": "react",
   "version": "1.0.0",
-  "description": "Setup node react project",
+  "description": "react-node",
   "main": "index.js",
-  "scripts": {
-    "start": "npm run build && node dist/index.js",
-    "dev": "nodemon --exec babel-node src/index.js",
-    "build": "./node_modules/.bin/babel src -d dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alvacoder/node-react.git"
-  },
-  "author": "Idris Adeniji (Alvacoder)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alvacoder/node-react/issues"
-  },
-  "homepage": "https://github.com/alvacoder/node-react#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
@@ -29,5 +13,21 @@
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.13.12",
     "nodemon": "^2.0.7"
-  }
+  },
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "./node_modules/.bin/babel src -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvacoder/node-react.git"
+  },
+  "author": "Idris Adeniji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvacoder/node-react/issues"
+  },
+  "homepage": "https://github.com/alvacoder/node-react#readme"
 }
