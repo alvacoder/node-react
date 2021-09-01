@@ -4,6 +4,9 @@
   "description": "Setup node react project",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "./node_modules/.bin/babel src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/alvacoder/node-react/issues"
   },
-  "homepage": "https://github.com/alvacoder/node-react#readme"
+  "homepage": "https://github.com/alvacoder/node-react#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.13.13",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.12",
+    "nodemon": "^2.0.7"
+  }
 }
