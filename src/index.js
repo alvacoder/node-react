@@ -10,6 +10,13 @@ app.get('/', function (req,res) {
   res.sendFile(path + "index.html");
 });
 
+app.get('/api', (req, res) => {
+    res.send({
+        status: 200,
+        message: 'Welcome to TeamHobbes API'
+    })
+})
+
 app.listen(port, () => {
     console.log('app running on port %s', port);
 });
